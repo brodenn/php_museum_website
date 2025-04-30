@@ -1,0 +1,66 @@
+/**
+ * Utility Classes
+ *
+ * This stylesheet provides a set of utility classes for quick layout adjustments,
+ * spacing, visibility control, and flexbox configurations. These utilities enable
+ * rapid prototyping and fine-tuning of layouts without the need for custom styles
+ * for common scenarios.
+ *
+ * Use these classes by adding them directly to HTML elements as class attributes
+ * to apply the desired styling.
+ *
+ * Categories:
+ * - Spacing Utilities: Adjust margins and paddings.
+ * - Flexbox Utilities: Simplify flexbox layout configurations.
+ * - Visibility Utilities: Quickly toggle element visibility.
+ * - Additional classes can be added as needed for specific project requirements.
+ */
+
+/* Spacing Utilities */
+.lined-box {
+    border: 1px solid #dee2e6; /* Light grey border for delineation */
+    border-radius: 5px; /* Rounded corners for a softer look */
+    padding: 15px; /* Inner spacing */
+    margin-bottom: 20px; /* Spacing between lined boxes */
+}
+
+.debug {
+    background-color: #f7f7f7; /* Light background for highlighting */
+    border: 1px solid #dee2e6; /* Consistent with .lined-box styling */
+    padding: 15px; /* Inner spacing */
+    margin-bottom: 20px; /* Bottom margin for separation */
+}
+
+/* Flexbox Utilities */
+.d-flex {
+    display: flex; /* Apply flexbox layout */
+}
+
+.flex-column {
+    flex-direction: column; /* Stack children vertically */
+}
+
+.align-items-center {
+    align-items: center; /* Vertically center children */
+}
+
+.justify-content-center {
+    justify-content: center; /* Horizontally center children */
+}
+
+.space-around {
+    justify-content: space-around; /* Even spacing around items */
+}
+
+.space-between {
+    justify-content: space-between; /* Even spacing between items */
+}
+
+/* Visibility Utilities */
+.hidden {
+    display: none; /* Hide element */
+}
+
+.visible {
+    visibility: visible; /* Ensure element is visible */
+}

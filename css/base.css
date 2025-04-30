@@ -1,0 +1,123 @@
+/**
+ * Base Stylesheet
+ *
+ * This stylesheet defines the foundational styles for the website, including
+ * typography, layout, and basic components. It utilizes Google Fonts for typography
+ * enhancements and sets global styles for HTML elements to ensure consistency
+ * across the website.
+ *
+ * Dependencies:
+ * - Google Fonts (Sanchez)
+ *
+ */
+
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Sanchez&display=swap');
+
+/* Root Element Styles */
+html {
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: scroll;
+    font-family: 'Sanchez', serif;
+}
+
+/* Body Element Styles */
+body {
+    margin: 8px auto;
+    padding: 8px;
+    width: 1200px;
+    background-color: #f8f9fa; /* Light grey for readability */
+    max-width: 100%; /* Prevents the body from stretching beyond the viewport width */
+    overflow-x: hidden;
+}
+
+/* Link Styles */
+a {
+    color: #0056b3; /* Accessible blue */
+    text-decoration: none; /* Removes underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Adds underline on hover */
+}
+
+a:visited {
+    color: #4b2e83; /* Accessible purple for visited links */
+}
+
+/* Header and Footer Styles */
+header, footer {
+    background-color: #f8f9fa; /* Light grey background */
+    padding: 5px;
+    text-align: center;
+    border-bottom: 1px solid #e7e7e7; /* Subtle separator for the header */
+}
+
+.site-header {
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    text-align: center;
+    padding: 10px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-wrap: wrap; /* Wrap content on small screens */
+}
+
+.site-logo {
+    margin-right: 10px; /* Adjust spacing between logo and site title if needed */
+    height: 50px; /* Adjust based on your logo's size */
+    padding: 0px;
+}
+
+.site-title {
+    margin: 0; /* Remove margin for tight spacing */
+}
+
+footer {
+    border-top: 1px solid #e7e7e7; /* Subtle separator for the footer */
+    margin-top: 20px;
+}
+
+/* Main Content Styles */
+main {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Heading Styles */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    color: #333;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Paragraph Styles */
+p {
+    line-height: 1.6;
+}
+
+img {
+    max-width: 600px; /* Maximum width of images */
+    height: auto; /* Adjusts the height automatically to maintain aspect ratio */
+    display: block; /* Ensures images are block-level elements for proper spacing */
+    margin: 0 auto; /* Centers images within their container */
+    padding: 5px;
+}
+
+@media (max-width: 768px) {
+
+    img {
+        max-width: 100%; /* Allows images to be fully responsive within their container */
+        height: auto; /* Keeps the aspect ratio intact */
+    }
+}

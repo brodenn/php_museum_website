@@ -1,0 +1,72 @@
+/**
+ * Layout Stylesheet
+ *
+ * Defines the layout structure for the website using Flexbox and CSS Grid.
+ * It includes styles for the main content and sidebar areas, as well as
+ * responsive adjustments for different screen sizes. The stylesheet also
+ * specifies grid layouts for sections like galleries to ensure a fluid,
+ * adaptive user experience across devices.
+ *
+ * Contents:
+ * - Flexbox layout for the main content area and sidebar.
+ * - Responsive design adjustments for smaller screen sizes.
+ * - Grid layout configurations for gallery sections.
+ *
+ */
+
+/* Flexbox Layout for Main Content and Aside */
+.wrap-main {
+    display: grid;
+    grid-template-columns: 5fr 1fr; /* Initial layout with main content and aside */
+    grid-template-areas: "main aside";
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1600px;
+}
+
+.main-content {
+    grid-area: main;
+    padding: 10px;
+}
+
+.aside-class {
+    grid-area: aside;
+    padding: 10px;
+}
+
+/* Responsive Layout Adjustments */
+@media (max-width: 1200px) {
+    .wrap-main {
+        grid-template-columns: 1fr; /* Adjusts to a single column layout */
+        grid-template-areas:
+            "aside"
+            "main";
+    }
+
+    .main-content, .aside-class {
+        width: 100%;
+        padding-right: 0;
+    }
+}
+
+/* Grid Layout for Sections like Galleries */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Default to four columns */
+    grid-gap: 0.2rem;
+    margin: auto;
+}
+
+/* Adjustments for medium and small screens */
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-grid {
+        grid-template-columns: 1fr; /* Single column for very small screens */
+    }
+}

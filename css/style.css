@@ -1,0 +1,37 @@
+/**
+ * Main Stylesheet
+ *
+ * This is the primary stylesheet for the application, responsible for aggregating
+ * various CSS files to create a coherent overall style. It imports font styles,
+ * base element styles, component-specific styles, layout configurations, navbar
+ * styles, and utility classes.
+ *
+ * It serves as the central point of style references, ensuring that all page elements
+ * are consistently styled according to the design guidelines.
+ *
+ * Contents:
+ * 1. Font Styles - Importing custom fonts used throughout the application.
+ * 2. Base Styles - Fundamental styles applied universally.
+ * 3. Component Styles - Specific styles for UI components like messages and tables.
+ * 4. Layout Styles - CSS for arranging elements on the page, using Flexbox and CSS Grid.
+ * 5. Navbar Styles - Styles dedicated to the navigation bar's appearance and behavior.
+ * 6. Utility Classes - Helper classes for common tasks like margin, padding, and display.
+ */
+
+/* Importing Font Styles */
+@import url('https://fonts.googleapis.com/css2?family=Sanchez&display=swap');
+
+/* Importing Base Styles */
+@import 'base.css';
+
+/* Importing Component Styles */
+@import 'components.css';
+
+/* Importing Layout Styles */
+@import 'layout.css';
+
+/* Importing Navbar Styles */
+@import 'navbar.css';
+
+/* Utility Classes and Additional Styles */
+@import 'utilities.css';

@@ -1,0 +1,56 @@
+/**
+ * Navigation Bar Styles
+ *
+ * This section defines the styles for the navigation bar, including its background,
+ * color scheme, layout, and responsive behavior. Styles are provided for link elements
+ * within the navbar to ensure consistency in appearance and interactivity. The navbar
+ * is designed to be flexible, accommodating varying screen sizes through responsive design adjustments.
+ *
+ * Contents:
+ * - Base styles for the navigation bar and its elements.
+ * - Hover and focus styles for navigation links.
+ * - Responsive adjustments for better usability on smaller screens.
+ */
+
+/* Base Navbar Styles */
+.navbar {
+    background-color: #113eac; /* Primary color for the navbar background */
+    padding: 0.5em;
+    color: white;
+    text-align: center;
+    margin-top: 0;
+    border-radius: 0; /* Opting for square edges for a modern look */
+    display: flex;
+    justify-content: center; /* Centers navbar items horizontally */
+    flex-wrap: wrap; /* Allows navbar items to wrap on smaller screens */
+}
+
+/* Styles for Navbar Links */
+.navbar a {
+    display: inline-block;
+    margin: 0.2em 0.5em; /* Provides spacing around links */
+    padding: 0.4em 0.8em;
+    font-size: 16px; /* Sets a standard font size for navbar links */
+    color: #fff; /* White text color for contrast against the background */
+    background-color: transparent; /* Ensures the background is transparent */
+    text-decoration: none; /* Removes underline from links */
+    transition: background-color 0.3s; /* Smooth transition for hover states */
+}
+
+/* Hover and Focus States for Navbar Links */
+.navbar a:hover, .navbar a:focus {
+    background-color: rgba(255, 255, 255, 0.2); /* Slight background color change on hover/focus */
+    text-decoration: none; /* Maintains the no-underline style on hover/focus */
+}
+
+/* Responsive Navbar Adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stacks navbar items vertically on smaller screens */
+    }
+    .navbar a {
+        width: 100%; /* Full width for links to increase tap target size */
+        text-align: center; /* Centers the text within full-width links */
+        margin: 5px 0; /* Adds spacing between vertically stacked links */
+    }
+}

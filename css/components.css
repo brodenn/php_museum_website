@@ -1,0 +1,162 @@
+/**
+ * Component Styles
+ *
+ * Defines styles for various UI components including messages, quotes, and tables.
+ * This stylesheet is intended to supplement the base styles by providing specific
+ * designs for interactive elements and content formatting within the application.
+ *
+ * Contents:
+ * - Messages: Styles for feedback messages including error, success, and warning.
+ * - Quotes: Styling for block quotes used within content areas.
+ * - Tables: Enhancements for tabular data presentation including scrollable tables
+ *   and sticky header functionality.
+ *
+ */
+
+/* Component-specific styles: Messages, Quotes, Tables */
+
+/* Messages */
+.notice,
+.error,
+.success,
+.warning {
+    padding: 14px 20px;
+    margin: 10px 0;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    text-align: center;
+}
+
+.error { background-color: #f44336; color: white; }
+.success { background-color: #4CAF50; color: white; }
+.warning { background-color: #ffeb3b; color: #333; }
+.notice { background-color: #2196F3; color: white; }
+
+/* Quotes */
+.quote-block {
+    font-size: 1.2em;
+    width: 80%;
+    margin: 2rem auto;
+    font-style: italic;
+    color: #333;
+}
+
+/* Tables */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Scrollable Table Container */
+.scrollable-table-container {
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+
+/* Table Headers */
+thead th {
+    position: sticky;
+    top: 0;
+    background-color: #113eac;
+    color: white;
+    z-index: 10;
+}
+
+/* Table Body */
+tbody td {
+    background-color: #fff;
+}
+
+/* Styling for Scrollbars */
+.table-management::-webkit-scrollbar {
+    height: 10px;
+}
+
+.table-management::-webkit-scrollbar-thumb {
+    background-color: #113eac;
+    border-radius: 10px;
+}
+
+.table-management::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+/* Sticky Columns */
+th:first-child, td:first-child {
+    position: sticky;
+    left: 0;
+    background-color: #f8f9fa;
+    z-index: 10;
+}
+
+/* Scrollable Column Content */
+.scrollable-column {
+    max-height: 150px;
+    overflow-y: auto;
+    display: block;
+}
+/* Search Form Styles */
+.search-form {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.search-form input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 300px;
+    margin-right: 10px;
+}
+
+.search-form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Search Results Styles */
+.search-results {
+    list-style: none;
+    padding: 0;
+}
+
+.search-results li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #007bff;
+}
+
+.search-results a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.search-results a:hover {
+    text-decoration: underline;
+}
+
+.search-header {
+    margin-bottom: 20px;
+}
